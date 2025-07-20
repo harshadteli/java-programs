@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Programming</title>
+    <style>
+        *{
+            margin: 3px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(19, 18, 18);
+            color: white;
+        }
+        h1{
+            font-size: 25px;
+        }
+        .content{
+             background-color: rgb(223, 216, 216);
+            height: 100px;
+            width: auto;
+            margin-left: 0px;
+            color: black;
+        }
+        .code{
+            background-color: black;
+            color: red;
+            font-size: 15px;
+        }
+        .question{
+            background-color: white;
+            height: 550px;
+            color: black;
+            font-weight: 12px;
+        }
+        button{
+            padding: 10px 10px;
+            border: none;
+            border-radius: 8px;
+            background-color: black;
+            color: white;
+        }button:hover{
+            background-color: red;
+            transition: 0.5s ease-in-out;
+        }
+        
+    </style>
+</head>
+<body>
+   
+    
+         <center><img src="./assets/IMAGES/java2.jpg" height="70px" width="auto"/></center>
+   <center><h1>Welcome To Java Programming</h1></center><br>
+    <hr><br>
+    <small><b>Guidance: Prof.Pooja Joshi.</b></small></center><br><br>
+   <hr>
+    <h2><small>Subject: Control Statements</small></h2>
+   <div class="content">
+   <p>Control statement can be divided into two parts were as given below.</p>
+   <ol>
+    <li>1)Branching Statements</li>
+    <li>2)Iterative models</li>
+   </ol>
+   <br><br>
+   </div><br>
+  <div class="code">
+    <p><font color="green">1)If else Example:-</font></p><br>
+    <pre>
+import java.util.Scanner;
+class Program
+{
+public static void main(String args[])
+{
+int n;
+Scanner obj = new Scanner(System.in);
+System.out.println("Enter the Number:");
+n = obj.nextInt();       
+if(n%2==0)
+{
+System.out.println(""+n+" is the Even Number");
+}
+ else
+{
+System.out.println(""+n+" is the odd Number");
+}
+}
+}
+    </pre>
+    <p><font color="green">2)If elseif Example:-</font></p><br>
+    <pre>
+import java.util.Scanner;
+class Ifelseif
+{
+public static void main(String args[])
+{
+float per;
+Scanner obj = new Scanner(System.in);
+System.out.println("Enter the percentage:");
+per = obj.nextFloat();
+if(per>=90)
+{
+ System.out.println("percentage is A");
+ }
+else if(per<=90 && per>=80)
+{
+System.out.println("percentage is B");
+}
+else if(per<=80 && per>=70)
+{
+System.out.println("percentage is C");
+}
+else if(per<=70 && per>=35)
+{
+System.out.println("Percentage is D");
+ }
+else
+{
+System.out.println("Studen Fail in the Exam");
+}
+}
+}
+
+    </pre>
+    <p><font color="green">3) For Loop Example:-</font></p><br>
+    <pre>
+import java.util.Scanner;
+class Forloop
+{ 
+public static void main(String args[])
+{
+int n;
+Scanner obj = new Scanner(System.in);
+System.out.println("Enter the Table Number:");
+n = obj.nextInt();
+System.out.println("The Table of "+n+":-");
+for(int i=1;i<11;i++)
+{
+System.out.println(i*n);
+}
+}
+}
+</pre>
+    <p><font color="green">3) do while Example:-</font></p><br>
+    <pre>
+import java.util.Scanner;
+class While
+{
+public static void main(String args[])
+{
+int n;
+Scanner obj = new Scanner(System.in);
+System.out.println("Enter the Number:");
+n = obj.nextInt();
+do
+{
+ System.out.println(n);
+n++;
+}
+while(n<=10);
+}
+}
+</pre>
+    <p><font color="green">To Check the given number is palindrome or not</font></p><br>
+    <pre>
+import java.util.Scanner;
+class Reverse
+{
+public static void main(String args[])
+{
+int n,r,rev=0,org;
+Scanner obj = new Scanner(System.in);
+System.out.println("Enter the Number:");
+n = obj.nextInt();
+org=n;
+while(n!=0)
+{
+    r = n%10;
+    rev = rev*10+r;
+    n=n/10;
+}
+ System.out.println("Reverse of 
+ "+org+" is "+rev);
+if(org==rev)
+{
+System.out.println(" "+org+" 
+is Palindrome Number");
+}
+ else
+{
+System.out.println(" "+org+" is not
+ a Palindrome Number");
+}
+ }
+}
+</pre>
+</div>
+<div class="question"><br>
+    <center><b>Try this Questions..</b></center><br>
+     <ol>
+        <li>1)To calculate the average of five numbers to accept the numbers from the user.
+    </li>
+        <li>2)To check the number is positive or neagtive.
+    </li>
+        <li>3)To check the number is even or odd.
+    </li>
+        <li>4)To check the number is divisible by 5 or not.
+    </li>
+        <li>5)To check the given triangle of  angles are valid or not.
+    </li>
+        <li>6)write a program on the Leap year
+    </li>
+        <li>7)Write a program on to accept the marks from student and calculate the percentage and  display the corresponding Grades of Student.
+    </li>
+        <li>8)To create the simple calculator using switch case.
+    </li>
+     </ol><br><br>
+     <center><button onclick="answers()">See Answers key</button></center><br><br>
+</div><br>
+<center><small>&copy; 2025 HarshTech | All Rights Reserved</small></center><br>
+<script>
+    function answers(){
+        alert("😂😂Use your Brain Thank You..... ");
+    }
+</script>
+   
+</body>
+</html>
